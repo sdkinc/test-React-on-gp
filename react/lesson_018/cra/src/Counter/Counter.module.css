@@ -1,0 +1,27 @@
+.btn {
+  margin: 10px;
+  /* padding: 0px; */
+  border-radius: 50%;
+  color: whitesmoke;
+  border: none;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+}
+
+.negative {
+  color: red;
+}
+
+.positive {
+  color: black;
+}
+
+.label {
+  font-size: 20px;
+}
+
+.container {
+  border: 1px solid;
+  border-color: black;
+}

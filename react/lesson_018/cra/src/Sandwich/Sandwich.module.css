@@ -1,0 +1,12 @@
+.container {
+  margin: 40px;
+}
+
+.btn {
+  border: none;
+  border-radius: 15px;
+  background-color: lightblue;
+  color: white;
+  padding: 10px;
+  margin: 15px;
+}
