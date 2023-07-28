@@ -9,22 +9,30 @@ import Sandwich from './Sandwich/Sandwich';
 import Car from './Car/Car';
 import Fruit from './Fruit/Fruit';
 import Parent from './Parent/Parent';
+import DogCard from './DogCard/DogCard';
+import CatFact from './CatFact/CatFact';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <div style={{ display: 'flex' }}>
+    <CatFact />
+    <CatFact />
+    <CatFact />
+    <Counter />
+    <DogCard />
     <Parent />
     <Fruit title="apple" color="green" weight={1000} img="https://t4.ftcdn.net/jpg/00/48/47/91/360_F_48479111_WLr33FVH1wF4s5s7783LrCFoXjgbvxoI.jpg" />
     <Fruit title="banana" color="yellow" weight={520} img="https://content2.rozetka.com.ua/goods/images/big/295811989.png" />
     <Fruit title="apple" color="red" weight={2000} img="https://www.investlab.com.ua/wp-content/uploads/2019/08/YAbloko.jpg" />
     <Car color="green" brand="bmw" />
     <Car color="red" brand="porsche" />
-    <Counter />
     <App />
     <FruitPage />
     <CityPage />
     <Sandwich />
-  </React.StrictMode>
+  </div>
+  // </React.StrictMode>
 );
