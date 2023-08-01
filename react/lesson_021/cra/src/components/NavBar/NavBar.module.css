@@ -1,0 +1,24 @@
+.container {
+  background-color: #DD403A;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.link {
+  color: #FFFCE8;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link:global.active{
+  text-decoration: underline;
+  border-radius: 20px;
+  border: yellow solid;
+  padding: 8px;
+  font-size: 25px;
+}
