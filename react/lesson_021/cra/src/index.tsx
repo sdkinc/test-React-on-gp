@@ -14,7 +14,7 @@ import App from './App/App';
 // import DogCard from './DogCard/DogCard';
 // import CatFact from './CatFact/CatFact';
 // eslint-disable-next-line import/no-extraneous-dependencies, import/order
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -22,9 +22,9 @@ const root = ReactDOM.createRoot(
 root.render(
   // <React.StrictMode>
   <>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
     {/* <FruitPage />
     <CityPage />
     <Counter />

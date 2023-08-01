@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import User from './types/User';
+import styles from './Admin.module.css';
 
 export default function Admin(): JSX.Element {
   const [users, setUsers] = useState<User[]>([]);
@@ -14,12 +15,14 @@ export default function Admin(): JSX.Element {
   }, []);
   return (
     <div>
-      USers:
-      <ul>
+      <ul className={styles.userList}>
         {users
           .map((user) => (
-            <li key={user.id}>{user.name.firstname} {user.name.lastname}
-            <Link to={String(user.id)}> to item</Link>
+            <li key={user.id} className={styles.userCard}>
+              <span>Username: {user.username}</span>
+              <span>First name: {user.name.firstname}</span>
+              <span>Last name: {user.name.lastname}</span>
+            <Link to={String(user.id)} className={styles.link}> more info</Link>
             </li>
           ))}
       </ul>

@@ -36,14 +36,13 @@ export default function UserPage(): JSX.Element {
     loadUser();
   }, [userId]);
   return (
-    <div>
-      USer
-      <span>Username: {user.username}</span>
-      <span>First name: {user.name.firstname}</span>
-      <span>Last name: {user.name.lastname}</span>
-      <span>Email: {user.email}</span>
-      <span>City: {user.address.city}</span>
-      <Link to="../users">back to list</Link>
+    <div style={{ border: 'solid black 2px', margin: '10px' }} key={user.id}>
+      <div>Ник: {user.username}</div>
+      <div>Имя, фамилия: {user.name.firstname} {user.name.lastname}</div>
+      <div>Телефон: {user.phone}</div>
+      <div>E-mail: {user.email}</div>
+      <div>Zip-code: {user.address.zipcode}</div>
+      <Link to="../users">Back to Users</Link>
     </div>
   );
 }
